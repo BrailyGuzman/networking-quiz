@@ -11,6 +11,8 @@ else:
 
 
 def quiz():
+    score = 10
+    
     question_1 = "1) What does IP stands for?"
     print(question_1)
     response_1 = input("Enter: ").upper()
@@ -18,7 +20,8 @@ def quiz():
         print("Correct!")
     else:
         print("Incorrect!")
-    
+        score - 1
+        
     time.sleep(1)
 
     question_2 = "2) What does TCP stands for?"
@@ -28,7 +31,7 @@ def quiz():
         print("Correct!")
     else:
         print("Incorrect!")
-
+        score - 1
     time.sleep(1)
 
     question_3 = "3) What does UDP stands for?"
@@ -38,7 +41,8 @@ def quiz():
         print("Correct!")
     else:
         print("Incorrect!")
-    
+        score - 1
+        
     time.sleep(1)
 
     question_4 = "4) What does DNS stands for?"
@@ -48,7 +52,8 @@ def quiz():
         print("Correct!")
     else:
         print("Incorrect!")
-    
+        score - 1
+        
     time.sleep(1)
 
     question_5 = "5) What does HTTP stands for?"
@@ -58,7 +63,8 @@ def quiz():
         print("Correct!")
     else:
         print("Incorrect!")
-
+        score - 1
+        
     time.sleep(1)
 
     question_6 = "6) What does OSI stands for?"
@@ -68,7 +74,8 @@ def quiz():
         print("Correct!")
     else:
         print("Incorrect!")
-    
+        score - 1
+        
     time.sleep(1)
 
     question_7 = "7) What does VPN stands for?"
@@ -78,7 +85,8 @@ def quiz():
         print("Correct!")
     else:
         print("Incorrect!")
-    
+        score - 1
+        
     time.sleep(1)
 
     question_8 = "8) What does DHCP stand for?"
@@ -88,7 +96,8 @@ def quiz():
         print("Correct!")
     else:
         print("Incorrect!")
-    
+        score - 1
+        
     time.sleep(1)
 
     question_9 = "9) What does LAN stand for?"
@@ -98,7 +107,8 @@ def quiz():
         print("Correct!")
     else:
         print("Incorrect!")
-    
+        score - 1
+        
     time.sleep(1)
 
     question_10 = "10) What does FTP stand for?"
@@ -108,9 +118,10 @@ def quiz():
         print("Correct")
     else:
         print("Incorrect!")
-    
+        score - 1
+        
     time.sleep(1)
-    print("You Have Completed The 10 Networking Questions Quiz")
+    print(f"You Have Completed The Quiz. Your Score is {score}/10")
     time.sleep(3)
     quit()
 quiz()
